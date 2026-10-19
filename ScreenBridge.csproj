@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    ScreenBridge — die PC-Seite: nimmt den Bildschirm auf, kodiert ihn auf der
+    Grafikkarte und schickt ihn an die Mac-App. Der Vertrag steht in PROTOKOLL.md.
+  -->
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>ScreenBridge</RootNamespace>
+    <AssemblyName>ScreenBridge</AssemblyName>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>ScreenBridge.ico</ApplicationIcon>
+    <!-- WFO1000 verlangt Serialisierungsangaben an Steuerelement-Eigenschaften.
+         Diese Anwendung hat keinen Designer: die Oberfläche steht in MainForm.cs. -->
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+
+</Project>
